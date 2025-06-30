@@ -698,8 +698,20 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\/mg\/back\.jpg\'\)\] {
+    background-image: url('./mg/back.jpg');
+  }
+  .bg-\[url\(\'\.\/src\/img\/back\.jpg\'\)\] {
+    background-image: url('./src/img/back.jpg');
+  }
+  .bg-\[url\(\'\.\/src\/mg\/back\.jpg\'\)\] {
+    background-image: url('./src/mg/back.jpg');
+  }
   .bg-\[url\(\'img\/back\.jpg\'\)\] {
     background-image: url('img/back.jpg');
+  }
+  .bg-\[url\(\'mg\/back\.jpg\'\)\] {
+    background-image: url('mg/back.jpg');
   }
   .bg-cover {
     background-size: cover;
