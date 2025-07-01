@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../input.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../css/css/all.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Academy - Cadastro de Estudante</title>
+  </head>
+  <body class="bg-gray-100">
+    
+    <section class="flex flex-col items-center justify-center h-screen max-w-5xl m-auto">
+        <h2 class="text-3xl my-4">Inscrções abertas</h2>
+
+        <form class="">
+            <h3 class="text-xl mb-4">Instruções de cadastro</h3>
+            <div class="flex gap-3 items-center mb-5">
+                <div class="w-20">Curso</div>
+                <div class="w-full">
+                    <select value="" class="border border-slate-300 w-full outline-sky-300 px-20 py-2 ">
+                        <option value=""> --Escolha--</option>
+                        <option value="">Contabilidade</option>
+                        <option value="">Ingles</option>
+                        <option value="">Programacao</option>
+                        <option value="">Excel Basico</option>
+                        <option value="">Excel Avancado</option>
+                        <option value="">Photoshoping</option>
+                    </select>
+                </div>
+            </div>
+            <div class="flex gap-3 items-center mb-5">
+                <div class="w-20">Regime</div>
+                <div class="w-full">
+                    <select value="" class="border border-slate-300 w-full outline-sky-300 px-20 py-2 ">
+                        <option value=""> --Escolha--</option>
+                        <option value="">Presencial</option>
+                        <option value="">Online</option>
+                    </select>
+                </div>
+            </div>
+
+            
+            <div class="">
+                <h2 class="text-xl mb-4">Dados do estudante</h2>
+                <div class="">
+                    <div class="flex gap-3 items-center mb-4">
+                        <span class="w-20">Apelido</span>
+                        <input type="text" name="apelido" required class="border border-slate-300 w-full outline-sky-300 py-2 px-2">
+                    </div>
+                    <div class="flex gap-3 items-center mb-4">
+                        <span class="w-20">Nome</span>
+                        <input type="text" name="name" required class="border border-slate-300 w-full outline-sky-300 py-2 px-2">
+                    </div>
+                    <div class="flex gap-3 items-center mb-4">
+                        <span class="w-20">email</span>
+                        <input type="email" name="name" required class="border border-slate-300 w-full outline-sky-300 py-2 px-2">
+                    </div>
+                    <div class="flex gap-3 items-center mb-4">
+                        <span class="w-20">Nasc</span>
+                        <input type="date" name="name" required class="border border-slate-300 w-full outline-sky-300 py-2 px-2">
+                    </div>
+                    <div class="flex gap-3 items-center mb-4">
+                        <span class="w-20">Genero</span>
+                        <select name="" id="" class="border border-slate-300 w-full outline-sky-300 px-5 py-2 ">
+                            <option value="">--Escolha--</option>
+                            <option value="">Masculino</option>
+                            <option value="">Feminino</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="submit"
+                    class="w-full bg-black/80 py-2 text-white cursor-pointer rounded-md 
+                           hover:bg-sky-700 transition-colors duration-300 font-semibold"
+            
+            >Cadastrar</button>
+        </form>
+    </section>
+   
+
+    <script src="../css/js/all.js"></script>
+  </body>
+</html>

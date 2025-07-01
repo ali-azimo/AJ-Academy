@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../input.css">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../css/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Academy - Login</title>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+   
+    <section class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mx-auto">
+        <form action="" class="flex flex-col" method="post">
+            <h3 class="font-semibold text-xl text-gray-900 dark:text-white text-center mb-4">Login</h3>
+            <hr class="mb-6 border border-slate-300 dark:border-gray-600">
+
+            <div class="mb-4">
+                <input type="email" name="email" placeholder="Digite o email válido" 
+                       class="border border-slate-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white 
+                              w-full outline-sky-300 px-3 py-2 rounded-md focus:ring-2 focus:ring-sky-500" required>
+            </div>
+
+            <div class="mb-6">
+                <input type="password" name="senha" placeholder="Digite a senha válida" 
+                       class="border border-slate-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white 
+                              w-full outline-sky-300 px-3 py-2 rounded-md focus:ring-2 focus:ring-sky-500" required>
+            </div>
+
+            <button type="submit" 
+                    class="w-full bg-black/80 py-2 text-white cursor-pointer rounded-md 
+                           hover:bg-sky-700 transition-colors duration-300 font-semibold">
+                Autenticar
+            </button>
+        
+            <div class="mt-4 text-center flex flex-col sm:flex-row justify-between gap-2">
+                <a href="./count.html" class="text-green-600 font-semibold hover:underline">Não tenho conta</a>
+                <a href="./esqueci.html" class="text-red-600 font-semibold hover:underline">Esqueci a senha</a>
+            </div>
+        </form>
+    </section>
+
+    <script src="../css/js/all.js"></script>
+    
+</body>
+</html>

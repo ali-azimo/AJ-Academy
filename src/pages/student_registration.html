@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../input.css" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../css/css/all.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Academy - Cadastro de Estudante</title>
+  </head>
+  <body class="bg-gray-100">
+    <section class="bg-black/80">
+      <header>
+        <div
+          class="flex flex-col sm:flex-row justify-between items-center max-w-5xl m-auto px-4 sm:px-0"
+        >
+          <div
+            class="py-4 uppercase text-white font-semibold text-center sm:text-left"
+          >
+            <a href="#" class="text-2xl">Academia</a>
+            <p class="text-sm">Conhecimento Online</p>
+          </div>
+          <div class="text-xl gap-2 flex items-center py-2 sm:py-0">
+            <a href="#" class="">
+              <i class="fa-brands fa-facebook-f bg-white rounded-2xl p-1"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa fa-brands fa-whatsapp bg-white rounded-2xl p-1"></i>
+            </a>
+            <a href="#" class="">
+              <i class="fa-brands fa-linkedin-in bg-white rounded-2xl p-1"></i>
+            </a>
+          </div>
+        </div>
+        <nav
+          class="max-w-6xl m-auto flex flex-col sm:flex-row justify-between items-center bg-black/50 px-4 sm:px-0"
+        >
+          <ul
+            class="flex flex-col sm:flex-row items-center gap-4 p-4 text-white"
+          >
+            <li><a href="count.html">Home</a></li>
+            <li><a href="#">Todos cursos</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Precos</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+          <a
+            href="register.html"
+            class="uppercase bg-white p-4 shadow-2xl font-semibold px-5 my-2 sm:my-0"
+            >Comece agora</a
+          >
+        </nav>
+      </header>
+    </section>
+
+    <main
+      class="flex items-center justify-center min-h-screen bg-gray-100 py-10"
+    >
+      <div
+        class="bg-gray-50 p-8 rounded-lg shadow-lg w-full max-w-md flex flex-col"
+      >
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">
+          Cadastro de Estudante
+        </h2>
+        <form action="#" method="POST">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label
+                for="full_name"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Nome Completo:</label
+              >
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="email"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Email:</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="seu.email@exemplo.com"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="password"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Senha:</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="********"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for="confirm_password"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Confirmar Senha:</label
+              >
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                placeholder="********"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for="course"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Cadeira (Curso):</label
+              >
+              <select
+                id="course"
+                name="course"
+                class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required
+              >
+                <option value="">Selecione uma cadeira</option>
+                <option value="ingles">Língua Inglesa</option>
+                <option value="programacao">Programação</option>
+                <option value="contabilidade">Contabilidade</option>
+                <option value="excel">Excel Avançado</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="design">Design Gráfico</option>
+              </select>
+            </div>
+
+            <div>
+              <label
+                for="modality"
+                class="block text-gray-700 text-sm font-bold mb-2"
+                >Modalidade:</label
+              >
+              <select
+                id="modality"
+                name="modality"
+                class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                required
+              >
+                <option value="">Selecione a modalidade</option>
+                <option value="online">Online</option>
+                <option value="presencial">Presencial</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between mt-6">
+            <button
+              type="submit"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+            >
+              Cadastrar
+            </button>
+          </div>
+          <div class="text-center mt-4">
+            <p class="text-sm text-gray-600">
+              Já tem uma conta?
+              <a
+                href="login.html"
+                class="text-blue-600 hover:text-blue-800 font-bold"
+                >Faça Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 mt-10">
+      <div
+        class="max-w-5xl m-auto px-4 sm:px-0 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div>
+          <h3 class="text-2xl font-semibold mb-1 uppercase">Academia</h3>
+          <p class="text-gray-400 text-sm uppercase">Conhecimento Online</p>
+          <div class="flex gap-3 mt-4 text-xl">
+            <a
+              href="#"
+              class="hover:text-blue-500 transition-colors duration-200"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="hover:text-green-500 transition-colors duration-200"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="#"
+              class="hover:text-blue-700 transition-colors duration-200"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="count.html"
+                class="hover:text-white transition-colors duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Todos Cursos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Preços</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Cursos Populares</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Língua Inglesa</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Programação</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Contabilidade</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-white transition-colors duration-200"
+                >Excel Avançado</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contato</h3>
+          <p class="text-gray-400 mb-2">
+            <i class="fa-solid fa-map-marker-alt mr-2"></i> Eduardo Mondlane,
+            Cidade de Lichinga
+          </p>
+          <p class="text-gray-400 mb-2">
+            <i class="fa-solid fa-phone mr-2"></i> +25 844 31 4455
+          </p>
+          <p class="text-gray-400">
+            <i class="fa-solid fa-envelope mr-2"></i> info@academia.com
+          </p>
+        </div>
+      </div>
+      <div
+        class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-6"
+      >
+        &copy; 2024 Academia. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <script src="../css/js/all.js"></script>
+  </body>
+</html>
